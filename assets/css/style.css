@@ -1,9 +1,23 @@
 body {
-  /* background-color: rebeccapurple; */
+  background-color: rebeccapurple;
 }
 
 h1 {
   margin: 0 auto;
   text-align: center;
   background-color: rgb(49, 223, 223);
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.hero-jumbotron {
+  margin: 0;
+  padding: 0;
 }
