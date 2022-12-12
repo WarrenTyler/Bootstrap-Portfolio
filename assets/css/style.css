@@ -1,11 +1,27 @@
-body {
-  background-color: rebeccapurple;
-}
+/* body {
+  background-color: #31343d;
+} */
+
 
 h1 {
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(49, 223, 223);
+  background-color: #91cdcd;
+  color: #31343d;
+  padding: 0px 6% 4px;
+  width: fit-content;
+  height: fit-content;
+}
+
+header {
+  /* display: flex; */
+  /* justify-content: space-between; */
+
+  background-color: #31343d;
+}
+
+main h2 {
+  color: #24486a;
 }
 
 .hero-info {
@@ -20,4 +36,17 @@ h1 {
 .hero-jumbotron {
   margin: 0;
   padding: 0;
+}
+
+
+.container {
+  width: 900px;
+}
+
+.card {
+  height: 400px;
+}
+.featured-card {
+  background-color: blue;
+  height: 200%;
 }
