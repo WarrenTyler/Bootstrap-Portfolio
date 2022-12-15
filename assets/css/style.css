@@ -65,6 +65,18 @@ main h2 {
   height: 120px;
 }
 
+.page-wrapper .page-section h2 {
+  font-size: 3rem;
+  color: var(--dark-blue);
+  border-bottom: 4px solid var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+.page-wrapper .page-section p {
+  color: var(--dark-blue);
+  margin: 1rem 2rem;
+  font-size: 1.6rem;
+}
 
 /* .container {
   width: 900px;
