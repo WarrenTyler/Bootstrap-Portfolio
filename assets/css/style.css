@@ -1,7 +1,25 @@
-/* body {
-  background-color: #31343d;
-} */
+:root {
+  --header-bg-color: #31343d;
+  --light-blue: #91cdcd;
+  --dark-blue: #2b557b;
+}
 
+html {
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.2;
+}
 
 h1 {
   margin: 0 auto;
@@ -11,37 +29,46 @@ h1 {
   padding: 0px 6% 4px;
   width: fit-content;
   height: fit-content;
+  border-top: 5px solid #31343d;
+  border-bottom: 5px solid #31343d;
 }
 
 header {
   /* display: flex; */
   /* justify-content: space-between; */
 
-  background-color: #31343d;
+  background-color: var(--header-bg-color);
+}
+
+header .nav-link {
+  color: var(--light-blue);
+  font-size: 2rem;
 }
 
 main h2 {
-  color: #24486a;
-}
-
-.hero-info {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  background-image: url("../images/02-hero-bg.jpg");
-  background-size: cover;
-  color: white;
+  color: var(--dark-blue);
 }
 
 .hero-jumbotron {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-color: var(--dark-blue);
+  background-blend-mode: lighten;
+}
+
+.hero-jumbotron img {
+  height: 120px;
 }
 
 
-.container {
+/* .container {
   width: 900px;
-}
+} */
 
 .card {
   height: 400px;
