@@ -89,3 +89,9 @@ main h2 {
   background-color: blue;
   height: 200%;
 }
+
+
+.contact .nav-link {
+  color: var(--dark-blue);
+  font-size: 1.8rem;
+}
