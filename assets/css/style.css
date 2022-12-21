@@ -2,6 +2,7 @@
   --header-bg-color: #31343d;
   --light-blue: #91cdcd;
   --dark-blue: #2b557b;
+  --card-height: 400px;
 }
 
 html {
@@ -83,13 +84,18 @@ main h2 {
 } */
 
 .card {
-  height: 400px;
+  /* width: 100vw; */
+  /* height: calc(var(--card-height) / 2); */
 }
 .featured-card {
   background-color: blue;
-  /* height: 200%; */
+  /* height: 300px; */
 }
 
+.work-gallery {
+  background-color: red;
+  margin: 0 auto;
+}
 
 .contact .nav-link {
   color: var(--dark-blue);
@@ -100,11 +106,11 @@ main h2 {
 
 /* ----------------- MEDIA QUERIES ----------------- */
 @media screen and (min-width: 768px) {
-  /* .page-wrapper .page-section .card {
-    width: 100%;
+  .page-wrapper .page-section .card {
+    /* width: 80vw; */
     contain: content;
     margin: 20px;
-  } */
+  }
   .page-wrapper .page-section {
     display: flex;
     flex-direction: row;
