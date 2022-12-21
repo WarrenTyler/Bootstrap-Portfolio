@@ -87,7 +87,7 @@ main h2 {
 }
 .featured-card {
   background-color: blue;
-  height: 200%;
+  /* height: 200%; */
 }
 
 
@@ -96,10 +96,35 @@ main h2 {
   font-size: 1.8rem;
 }
 
+
+
 /* ----------------- MEDIA QUERIES ----------------- */
 @media screen and (min-width: 768px) {
-  .page-section {
+  /* .page-wrapper .page-section .card {
+    width: 100%;
+    contain: content;
+    margin: 20px;
+  } */
+  .page-wrapper .page-section {
     display: flex;
     flex-direction: row;
+  }
+  /* .page-wrapper .page-section h2 {
+    border-bottom: 0;
+    border-right: 6px solid;
+    text-align: right;
+    word-break: break-word;
+    width: 1%;
+  } */
+  #about h2, .page-wrapper .page-section h2 {
+    border-bottom: 0;
+    border-right: 6px solid;
+    text-align: right;
+    /* word-break: break-word; */
+    padding-left: 70px;
+  }
+
+  .card-img-overlay {
+    height: 10px;
   }
 }
