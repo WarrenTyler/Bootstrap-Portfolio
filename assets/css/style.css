@@ -21,11 +21,14 @@ body {
   line-height: 1.2;
 }
 
+.bg-blue {
+  background-color: var(--light-blue);
+  color: var(--header-bg-color);
+}
+
 h1 {
   margin: 0 auto;
   text-align: center;
-  background-color: #91cdcd;
-  color: #31343d;
   padding: 0px 6% 4px;
   width: fit-content;
   height: fit-content;
