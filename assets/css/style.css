@@ -24,9 +24,10 @@ body {
 .bg-blue {
   background-color: var(--light-blue);
   color: var(--header-bg-color);
+  padding: 0.5rem 1rem;
 }
 
-h1 {
+h1.bg-blue {
   margin: 0 auto;
   text-align: center;
   padding: 0px 6% 4px;
@@ -34,6 +35,21 @@ h1 {
   height: fit-content;
   border-top: 5px solid #31343d;
   border-bottom: 5px solid #31343d;
+}
+
+.card {
+  border: 4px solid var(--light-blue);
+}
+
+#work img {
+  height: 200%;
+}
+
+.card-img-overlay .bg-blue {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 10%;
 }
 
 header {
@@ -78,10 +94,6 @@ main h2 {
   font-size: 1.6rem;
 }
 
-.featured-card {
-  background-color: blue;
-}
-
 .work-gallery {
   margin: 0 auto;
 }
@@ -112,7 +124,11 @@ main h2 {
     text-align: right;
   }
 
-  /* .card-img-overlay {
-    height: 10px;
-  } */
+  .card-img-overlay .bg-blue {
+    font-size: 2rem;
+  }
+
+  .card {
+    border: 6px solid var(--light-blue);
+  }
 }
